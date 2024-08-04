@@ -4,7 +4,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) =>{
 
-    const url = 'http://localhost:4000';
+    const url = 'http://localhost:10000';
 
 
     const ContextValue ={
