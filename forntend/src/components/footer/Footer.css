@@ -1,0 +1,83 @@
+.footer{
+    width: 100%;
+    background-color: rgba(206, 202, 202, 0.934);
+}
+.footermain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left .logo {
+    width: 200px;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+}
+.footer-left .num{
+    position: relative;
+    top: -120px;
+    left: 20px;
+} 
+.footer-left .social {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: -100px;
+    mix-blend-mode: difference;
+    cursor: pointer;
+}
+
+.footermain .footer-center {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.footer-center ul {
+    color: #363636;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    left: -30px;
+    margin-left: 10px;
+}
+
+.footermain .footer-right {
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.footer-right ul {
+    color: #363636;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    left: -30px;
+    margin-left: 10px;
+}
+.footer .copy{
+    text-align: center;
+}
+
+
+@media (max-width:750px) {
+    .footermain{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .footer .copy{
+        text-align: center;
+        position: relative;
+        top: -10px;
+    }
+    .footermain .footer-center{
+        position: relative;
+        top: -60px;
+    }
+    .footermain .footer-right{
+        position: relative;
+        top: -40px;
+    }
+}

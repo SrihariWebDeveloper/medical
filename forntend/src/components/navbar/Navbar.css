@@ -1,0 +1,122 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #dce3e5;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.nav-right{
+    margin-top: 0px;
+    margin-left: 10px;
+}
+.nav-right img{
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    width: 170px;
+    height: 170px;
+}
+.navbar .nav-center{
+    margin-top: 0px;
+}
+.nav-center .input-find{
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    width: 205%;
+    border: 2px solid #1b1a1acc;
+    border-radius: 50px;
+}
+.input-find input{
+    width: 200px;
+    width: 190%;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+}
+.input-find input[type="text"]{
+    padding-left: 10px;
+}
+.input-find img{
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.navbar .nav-left{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.navbar .nav-left ul{
+    display: flex;
+    gap: 40px;
+    font-size: 15px;
+}
+.nav-left ul li{
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar .nav-left ul li img{
+    width: 40px;
+    height: 30px;
+    mix-blend-mode: color-burn;
+    display: none;
+}
+.navbar .nav-left ul li img#cross{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: none;
+}
+.navbar .nav-left ul .active{
+    border-bottom: 3px solid tomato;
+}
+@media (max-width:750px){
+    .navbar.active{
+        background-color: rgb(214, 211, 211);
+        width: 100%;
+        height: auto;
+    }
+    .nav-right img{
+        top: -10px;
+        width: 100px;
+        height: 100px;
+    }
+    .nav-center .input-find{
+        display: none;
+    }
+    .navbar .nav-left ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar .nav-left ul li img{
+        display: block;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .navbar .nav-left ul li img#cross{
+        display: block;
+        margin-left: 40px;
+    }
+    .nav-left ul a{
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width:1280px) and (min-width:750px){
+    .nav-center .input-find{
+        display: none;
+        
+    }
+}

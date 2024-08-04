@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  max-height: 100vh;
+  margin: auto 50px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
