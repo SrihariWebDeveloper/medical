@@ -4,7 +4,7 @@ export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) =>{
 
-    const url = 'https://medical-backend-x262.onrender.com';
+    const url = "https://medical-backend-4sb8.onrender.com";
 
 
     const ContextValue ={
