@@ -2,10 +2,11 @@ import express from "express";
 import cors from "cors";
 import { dBConnection } from "./confic/db.js";
 import MedicenRoute from "./routes/medicen_routes.js";
+import 'dotenv/config'
 
 //confic
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 //midelwares
 app.use(express.json())

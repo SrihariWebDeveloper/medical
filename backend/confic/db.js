@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
 
 export const dBConnection = async() =>{
-    await mongoose.connect('mongodb+srv://srihariDev:Srihari07@cluster0.rmhhhrk.mongodb.net/medical').then(()=>console.log("DB connected"))
+    await mongoose.connect(`${process.env.MONGOODB_URL}/medical`).then(()=>console.log("DB connected"))
 }
